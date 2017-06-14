@@ -8,8 +8,11 @@ class OtherUtterances extends Component {
 
   render() {
     return (
-      <div>
-        Other Utterances 
+      <div className='others'>
+        <h4>Utterances<span className='viewAll'>VIEW ALL</span></h4>
+        <div className='othersContainer'>
+          <h4>Here's a generic utterance.</h4>
+        </div>
       </div>
     );
   }

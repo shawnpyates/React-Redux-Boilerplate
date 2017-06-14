@@ -14,8 +14,11 @@ class MappingLog extends Component {
   render() {
     return (
       <div>
-        <span>{this.state.activeItem}</span>
-        <ActiveItem />
+        <div className='container'>
+          <h4>{this.props.utterance}</h4>
+          <ActiveItem />
+        </div>
+        <InactiveItem />
       </div>
     );
   }

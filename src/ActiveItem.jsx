@@ -13,20 +13,26 @@ class ActiveItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: 1
+      activeItem: 0
     }
   }
 
   render() {
     return (
       <div>
-        <p>{this.state.activeItem}</p>
         <FocusUtterance />
-        <IntentDescription />
-        <Response />
-        <OtherUtterances />
-        <Organizations />
-        <Tags /> 
+        <IntentBar />
+        <div className="col-md-8">
+          <IntentDescription />
+          <Response />
+          <OtherUtterances />
+        </div>
+        <div className="col-md-4">
+          <Organizations />
+          <h4>Locale  XXXX</h4>
+          <Tags /> 
+          <button className='confirm'>Confirm</button>
+        </div>
       </div>
     );
   }

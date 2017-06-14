@@ -8,8 +8,10 @@ class Tags extends Component {
 
   render() {
     return (
-      <div> 
-        Tags
+      <div className='tags'>
+        <h4>Tags</h4>
+        <div className='tagsContainer'>
+        </div>
       </div>
     );
   }

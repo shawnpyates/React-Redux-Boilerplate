@@ -8,8 +8,14 @@ class Response extends Component {
 
   render() {
     return (
-      <div>
-        Response
+      <div className='response'>
+        <h4>Response</h4>
+        <div className='responseContainer'>
+          <p> 
+            Pellentesque et odio est. Duis non leo at odio vehicula pulvinar a aliquet nunc. 
+            Cras erat nisi, euismod quis metus sollicitudin, egestas fringilla elit. 
+          </p>
+        </div>
       </div>
     );
   }

@@ -8,7 +8,9 @@ class InactiveItem extends Component {
 
   render() {
     return (
-      <div>
+      <div className='inactiveItem'>
+        <h4>Utterance</h4>
+        <h4>> Intent Name</h4>
       </div>
     );
   }

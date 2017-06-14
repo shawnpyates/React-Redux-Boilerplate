@@ -8,8 +8,14 @@ class IntentBar extends Component {
 
   render() {
     return (
-      <div>
-        IntentBar
+      <div className='intentBar'>
+          <select name='intentBar'>
+            <option value="" disabled>Please Select</option>
+            <option>Intent Name (full)</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
       </div>
     );
   }

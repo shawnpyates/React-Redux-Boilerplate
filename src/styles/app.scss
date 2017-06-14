@@ -1,0 +1,120 @@
+body {
+  font-family: Arial;
+}
+
+.layout {
+  max-width: 60%;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid black;
+  height: 50px;
+  width: 100%;
+}
+
+header span {
+  float: right;
+  margin-top: 20px;
+  margin-right: 140px;
+  font-family: Arial
+}
+.organization {
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 20px;
+  width: 170px;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+  padding: 50px;
+  margin-top: 25px;
+}
+
+.agent {
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 20px;
+  width: 170px;
+}
+
+.intentBar select {
+  width: 100%;
+}
+
+
+.intentDescription {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.descriptionContainer {
+  border: 1px solid black;
+  padding: 10px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.organizations {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.organizationsContainer {
+  min-height: 70px;
+  border: 1px solid black;
+}
+
+.response {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.responseContainer {
+  border: 1px solid black;
+  padding: 10px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.others {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.othersContainer {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.viewAll {
+  float: right;
+}
+
+.tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tagsContainer {
+  min-height: 70px;
+  border: 1px solid black;
+}
+
+.confirm {
+  float: right;
+}
+
+.inactiveItem {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+}

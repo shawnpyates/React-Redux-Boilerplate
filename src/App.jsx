@@ -35,7 +35,7 @@ class App extends Component {
     super(props);
     this.state =
       {
-        currentUser: "Username"
+        currentUser: "UserName"
       };
   }
 
@@ -54,11 +54,11 @@ class App extends Component {
     }
     return (
       <div>
-        <h2>Hello {this.props.data.utterances[0].text} </h2>
         <Header currentUser={ this.state.currentUser } />
-        <Dropdowns />
-        <MappingLog // utterance={ this.props.data.Utterance.text } 
-        /> 
+        <div className='layout'>
+          <Dropdowns />
+          <MappingLog utterance={this.props.data.utterances[0].text}/> 
+        </div>
       </div>
     );
   }

@@ -10,7 +10,7 @@ class Dropdowns extends Component {
     return (
       <div className='dropdowns'>
         <div className='organization'>
-          <h3>Organization</h3>
+          <h4>Organization</h4>
           <select name="organization">
             <option value="" disabled>Please Select</option>
             <option>1</option>
@@ -20,7 +20,7 @@ class Dropdowns extends Component {
           </select>
         </div>
         <div className='agent'>
-          <h3>Agent</h3>
+          <h4>Agent</h4>
             <select name="agent">
               <option value="" disabled>Please Select</option>
               <option>1</option>
@@ -29,6 +29,9 @@ class Dropdowns extends Component {
               <option>4</option>
           </select>
         </div> 
+        <button>
+          View Log
+        </button>
       </div>
     );
   }
