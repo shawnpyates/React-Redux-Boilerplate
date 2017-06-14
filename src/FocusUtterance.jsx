@@ -9,7 +9,7 @@ class FocusUtterance extends Component {
   render() {
     return (
       <div>
-        <h3>Mapping Log: OrgName>AgentName</h3>
+        <h4>{this.props.focusUtterance.text}</h4>
       </div>
     );
   }

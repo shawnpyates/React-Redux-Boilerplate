@@ -18,10 +18,11 @@ class ActiveItem extends Component {
   }
 
   render() {
+    console.log("PROPS FROM ACTIVE ITEM", this.props);
     return (
       <div>
-        <FocusUtterance />
-        <IntentBar />
+        <FocusUtterance focusUtterance={this.props.focusUtterance}/>
+        <IntentBar intents={this.props.intents} />
         <div className="col-md-8">
           <IntentDescription />
           <Response />

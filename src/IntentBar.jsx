@@ -7,14 +7,18 @@ class IntentBar extends Component {
   }
 
   render() {
+    console.log("PROPS FROM IB", this.props.intents);
+    let intents = this.props.intents;
+    let intentsRendered = intents.map((intent) => {
+      return (
+        <option>{intent.name}</option>
+      );
+    });
     return (
       <div className='intentBar'>
           <select name='intentBar'>
             <option value="" disabled>Please Select</option>
-            <option>Intent Name (full)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
+            {intentsRendered}
           </select>
       </div>
     );

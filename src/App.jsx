@@ -27,7 +27,7 @@ class App extends Component {
     data: React.PropTypes.shape({
       loading: React.PropTypes.bool,
       error: React.PropTypes.object,
-      Utterance: React.PropTypes.object,
+      Utterances: React.PropTypes.object
     }).isRequired,
   }
 
@@ -43,8 +43,7 @@ class App extends Component {
   // const AppWithData = graphql(UtteranceQuery)(App);
 
   render() {
-    console.log("RENDERING");
-    console.log(this.props.data);
+    console.log("PROPS FROM APP", this.props.data);
     if (this.props.data.loading) {
       return (<div>Loading</div>)
     }
@@ -57,7 +56,7 @@ class App extends Component {
         <Header currentUser={ this.state.currentUser } />
         <div className='layout'>
           <Dropdowns />
-          <MappingLog utterance={this.props.data.utterances[0].text}/> 
+          <MappingLog utterances={this.props.data.utterances}/> 
         </div>
       </div>
     );
@@ -72,9 +71,19 @@ class App extends Component {
 //   }).isRequired,
 // }
 
-const UtteranceQuery = gql`
-  query UtteranceQuery {
-    utterances(id: 1) {
+// const UtteranceQuery = gql`
+//   query UtteranceQuery {
+//     utterances(id: 1) {
+//       domainEntities
+//       text
+//       intentID
+//     }
+//   }
+// `;
+
+const UtterancesQuery = gql`
+  query UtterancesQuery {
+    utterances {
       domainEntities
       text
       intentID
@@ -88,9 +97,8 @@ const UtteranceQuery = gql`
 //     }
 //   }`
 
-const AppWithData = graphql(UtteranceQuery)(App);
+const AppWithData = graphql(UtterancesQuery)(App);
 
-// const AppWithData = graphql(TrainerQuery)(App);
 
 
 export default AppWithData;
